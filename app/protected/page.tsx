@@ -1,8 +1,12 @@
 import SignOut from "@/components/sign-out";
-import { Widget } from '@typeform/embed-react'
+import { PopupButton } from '@typeform/embed-react'
 
 const Onboarding = () => {
-  return <Widget id="LROMk6Zb" style={{ width: '100%' }} />
+  return (
+    <PopupButton id="<form-id>" style={{ fontSize: 20 }} className="my-button">
+      click to open form in popup
+    </PopupButton>
+  )
 }
 
 export default function Home() {
