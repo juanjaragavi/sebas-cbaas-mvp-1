@@ -1,4 +1,5 @@
 import SignOut from "@/components/sign-out";
+import { Widget } from '@typeform/embed-react'
 
 export default function Home() {
   return (
