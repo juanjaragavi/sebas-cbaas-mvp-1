@@ -57,7 +57,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Navbar() {
+function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -258,3 +258,4 @@ export default function Navbar() {
     </header>
   );
 }
+export default Navbar;
