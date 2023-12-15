@@ -4,8 +4,8 @@ import SignOut from "@/components/sign-out";
 export default function Home() {
 
   return (
-    <div className="flex h-screen bg-black">
-      <div className="w-screen h-screen flex flex-col space-y-5 justify-center items-center">
+    <div className="flex w-full h-full bg-white">
+      <div className="w-full h-full flex flex-col space-y-5 justify-center items-center">
         <iframe
           src="https://juanjaramilloai.typeform.com/to/LROMk6Zb"
           title="YouTube video player"
