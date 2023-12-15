@@ -33,10 +33,10 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es-co">
       <body className={inter.variable}>
         <Toaster />
-        <Suspense fallback="Loading...">
+        <Suspense fallback="Cargando...">
           {/* @ts-expect-error Async Server Component */}
           <AuthStatus />
         </Suspense>
