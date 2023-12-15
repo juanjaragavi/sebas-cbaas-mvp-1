@@ -1,12 +1,4 @@
 import SignOut from "@/components/sign-out";
-import { createWidget } from '@typeform/embed'
-import '@typeform/embed/build/css/widget.css'
-const container = document.querySelector('#form');
-if (container instanceof HTMLElement) {
-  createWidget('LROMk6Zb', { container });
-} else {
-  console.error('No se encontró el elemento #form');
-}
 
 
 export default function Home() {
@@ -15,12 +7,11 @@ export default function Home() {
     <div className="flex h-screen bg-black">
       <div className="w-screen h-screen flex flex-col space-y-5 justify-center items-center">
         <iframe
-          id="form"
           src="https://juanjaramilloai.typeform.com/to/LROMk6Zb"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          className="w-full max-w-screen-lg h-screen"
+          className="w-full h-full"
         ></iframe>
         <SignOut />
       </div>
