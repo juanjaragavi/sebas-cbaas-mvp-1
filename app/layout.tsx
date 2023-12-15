@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import AuthStatus from "@/components/auth-status";
 import { Suspense } from "react";
+import { NextUIProvider } from "@nextui-org/react";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,15 +34,17 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es-co">
-      <body className={inter.variable}>
-        <Toaster />
-        <Suspense fallback="Cargando...">
-          {/* @ts-expect-error Async Server Component */}
-          <AuthStatus />
-        </Suspense>
-        {children}
-      </body>
-    </html>
+    <NextUIProvider>
+      <html lang="es-co">
+        <body className={inter.variable}>
+          <Toaster />
+          <Suspense fallback="Cargando...">
+            {/* @ts-expect-error Async Server Component */}
+            <AuthStatus />
+          </Suspense>
+          {children}
+        </body>
+      </html>
+    </NextUIProvider>
   );
 }
