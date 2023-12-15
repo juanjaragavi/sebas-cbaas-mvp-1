@@ -2,7 +2,7 @@ import SignOut from "@/components/sign-out";
 
 export default function Home() {
   return (
-    <div className="min-w-full min-h-full bg-white">
+    <div className="min-w-full h-full min-h-full bg-white">
       <iframe
         src="https://juanjaramilloai.typeform.com/to/LROMk6Zb"
         title="Typeform Onboarding Form"
