@@ -8,7 +8,7 @@ export default function Home() {
         title="Typeform Onboarding Form"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="min-w-full min-h-full"
+        className="min-w-full h-full min-h-full"
       ></iframe>
       <SignOut />
     </div>
