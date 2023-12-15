@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "./nav/navbar";
 
 export default function Home() {
   return (
     <div className="flex h-screen bg-black">
+      <Navbar />
       <div className="w-screen h-screen flex flex-col justify-center items-center">
         <Image
           width={512}
